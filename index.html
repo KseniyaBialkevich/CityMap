@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Task for a Junior JS developer</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="http://cdn.webix.com/edge/webix.css" type="text/css"> 
+	<script src="http://cdn.webix.com/edge/webix.js" type="text/javascript"></script> 
+	<script src="doc.js"></script>
+</head>	
+<body>
+	<form id = "userInterface">
+		<h2>Please fill in the form below</h2>
+		<label for = "city"><span>* </span>City</label><br>
+		<input type = "text" id = "city" required><br>
+		<label for = "state"><span>* </span>State</label><br>
+		<input type = "text" id = "state" required><br>
+		<label for = "latitude"><span>* </span>Latitude</label><br>
+		<input type = "number" min="-90" max="90" id = "latitude" required><br>
+		<label for = "longitude"><span>* </span>Longitude</label><br>
+		<input type = "number" min="-180" max="180" id = "longitude" required><br>
+		<p><span>* </span>Indicates required field.</p>
+		<button type="button" onclick = "CM.completedForm()">Submit</button>
+	</form>	
+
+	<div id="donutChart"></div>
+</body>
+</html>
